@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+# vector variables
+my @names=("student1","student2","student3",100 );
+print "@names[0]\n";
+print "size of the array:" .scalar@names;
