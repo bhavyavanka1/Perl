@@ -1,0 +1,99 @@
+# Perl
+# What is Perl?
+Perl (Practical Extraction and Reporting Language) is a high-level, interpreted, dynamically typed scripting language developed by Larry Wall in 1987. It was originally designed for text processing and report generation but later evolved into a powerful general-purpose programming language.
+
+# key Features of perl**
+-Interpreted language (no separate compilation required)
+-Dynamically typed (no need to declare data types)
+-Strong text and pattern matching capabilities
+-Cross-platform (Linux, Windows, macOS)
+-Automatic memory management
+-Supports procedural and functional programming styles
+-Rich library support (CPAN – Comprehensive Perl Archive Network)
+
+# How Perl is Used in Industries
+# 1.VLSI & Semiconductor Industry (Very Important for You 👩‍💻)
+In VLSI and EDA industries, Perl is extensively used for:
+-Parsing simulation logs
+-Extracting coverage reports
+-Automating regression runs
+-Generating test reports
+-Processing waveform data
+-Managing large datasets from tools like Cadence, Synopsys, Mentor
+-Perl scripts help automate verification flows and reduce manual effort in RTL and verification environments.
+Even though newer languages like Python are popular today, Perl is still widely used in many industries, especially where automation and legacy systems are involved.
+
+# DIFFERENCES BETWEEN PERL,VERILOG HDL, SYSTEM VERILOG AND UVM
+| Feature         | Perl                | Verilog             | SystemVerilog                | UVM                      |
+| --------------- | ------------------- | ------------------- | ---------------------------- | ------------------------ |
+| Type            | Scripting Language  | HDL                 | HDL + Verification           | Verification Methodology |
+| Used For        | Automation          | RTL Design          | Design + Verification        | Advanced Verification    |
+| Hardware Design |  No                |  Yes               |  Yes                        |  No                     |
+| OOP Support     | Limited             |  No                |  Yes                        |  Yes                    |
+| Runs On         | CPU                 | Simulator/FPGA/ASIC | Simulator/FPGA               | Simulator                |
+| Industry Role   | Automation Engineer | RTL Engineer        | Design/Verification Engineer | Verification Engineer    |
+
+
+# Perl Scalars
+In Perl, a scalar is the most fundamental data type used to store a single value. Scalar variables always begin with the dollar symbol ($), which indicates that the variable holds one item at a time. A scalar can store different kinds of data such as integers, floating-point numbers, strings, or even references. One of the most powerful features of Perl scalars is dynamic typing, meaning the programmer does not need to explicitly declare the data type. The interpreter automatically determines the type of value during runtime and performs necessary conversions when required.
+Perl also supports automatic type conversion between numbers and strings. For example, a numeric string can participate in arithmetic operations without manual casting. Scalars support string interpolation when used inside double quotes, allowing variables to be directly embedded within strings. Additionally, Perl follows context-sensitive behavior, meaning a scalar may behave differently depending on how it is used in an expression.
+Scalars are widely used in scripting tasks such as storing user input, performing calculations, handling file data, managing counters, and processing log files. Due to their flexibility and simplicity, scalars form the foundation of Perl programming and play a crucial role in automation, text processing, and system-level scripting tasks.
+
+# Perl Vectors (Arrays)
+In Perl, a “vector” is commonly referred to as an array. An array is an ordered collection of scalar values stored in a single variable. Unlike some programming languages where vectors must store only one type of data, Perl arrays are flexible and can store mixed data types such as strings, integers, and floating-point numbers.
+Arrays in Perl always begin with the @ symbol.
+
+# Perl Arithmetic Operators
+Perl provides standard arithmetic operators to perform mathematical calculations such as addition, subtraction, multiplication, division, modulus, and exponentiation. Since Perl is dynamically typed, arithmetic operations can be performed directly on scalar variables without explicitly declaring their data types.
+Arithmetic operations in Perl work on numeric scalars, and Perl automatically converts strings to numbers if necessary.
+| Operator | Description         | Example    |
+| -------- | ------------------- | ---------- |
+| `+`      | Addition            | `$a + $b`  |
+| `-`      | Subtraction         | `$a - $b`  |
+| `*`      | Multiplication      | `$a * $b`  |
+| `/`      | Division            | `$a / $b`  |
+| `%`      | Modulus (Remainder) | `$a % $b`  |
+| `**`     | Exponentiation      | `$a ** $b` |
+
+# Perl Comparison Operators
+Comparison operators in Perl are used to compare two values.
+Perl provides two types of comparison operators:
+1️.Numeric comparison operators
+2️.String comparison operators
+
+# 1.Numeric comparision operators
+| Operator | Meaning                               |
+| -------- | ------------------------------------- |
+| `==`     | Equal to                              |
+| `!=`     | Not equal to                          |
+| `<`      | Less than                             |
+| `>`      | Greater than                          |
+| `<=`     | Less than or equal to                 |
+| `>=`     | Greater than or equal to              |
+| `<=>`    | Spaceship operator (returns -1, 0, 1) |
+
+# 2.String comparision operators
+| Operator | Meaning                   |
+| -------- | ------------------------- |
+| `eq`     | Equal                     |
+| `ne`     | Not equal                 |
+| `lt`     | Less than                 |
+| `gt`     | Greater than              |
+| `le`     | Less than or equal        |
+| `ge`     | Greater than or equal     |
+| `cmp`    | String spaceship operator |
+
+# Perl Logical Operators
+Logical operators in Perl are used to combine multiple conditions and return a Boolean result (true or false). They are commonly used in decision-making statements like if, while, and unless.
+| Operator | Meaning            | Description                      |  
+| -------- | ------------------ | -------------------------------- | 
+| `&&`     | Logical AND        | True if both conditions are true |          
+| `||`     | Logical OR         | True if at least one condition is true |
+| `!`      | Logical NOT        | Reverses the condition           |                                                   
+| `and`    | Low-precedence AND | Same as `&&` but lower priority  |                                                  
+| `or`     | Low-precedence OR  | Same as `||` but lower priority                   
+| `not`    | Low-precedence NOT | Same as `!` but lower priority   |                     
+
+
+
+
