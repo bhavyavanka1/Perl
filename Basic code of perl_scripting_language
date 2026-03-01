@@ -1,0 +1,17 @@
+#What is Perl?
+#Perl is a high-level, dynamically typed, interpreted scripting language designed for powerful text processing, automation, and rapid application development.
+#Originally developed by Larry Wall (1987), Perl was created to make report generation and text manipulation easier for system administrators and developers.
+#simple program
+# Perl
+#!/usr/bin/perl
+#use strict;
+use warnings;
+print "vlsi,perl\n";
+if (1==1){
+    print "conditinal statement-1\n";
+    print "conditional statement-2\n";
+}
+
+#to get the output go to new terminal and enter 
+#perl saved_filename.pl
+#eg: perl hello.pl
