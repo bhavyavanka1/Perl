@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+# scalar variables
+my $name="student";
+my $age=06;
+my $salary=61000.53;
+print "$name\n";
+print "$age\n";
+print "$salary\n";
