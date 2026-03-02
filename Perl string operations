@@ -1,0 +1,28 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+my $b = "bhavi";
+my $s = "sravs";
+print ("Equal to:" .($b eq $s)."\n");
+print ("NotEqual to:" .($b ne $s)."\n");
+print ("Greater_than:" .($b gt $s)."\n");
+print ("Less_than:" .($b lt $s)."\n");
+print ("Greaterthan or Equalto:" .($b ge $s)."\n");
+print ("Lessthan or Equalto:" .($b le $s)."\n");
+
+#(s//)
+my $name = "vlsi at aditya";
+$name=~ s/aditya/thub/; 
+print $name;             #taken string as vlsi at aditya in place of aditya the string thub is replaced and the output will be vlsi at thub
+
+my $name5="vlsi design flow";
+#split the string - 
+my @word = split(/ /,$name5);
+print ($word[2]. "\n");
+
+#join 
+my @words = ("vlsi ", "design ", "flow ");
+my $name1 = join("",@words);
+print $name1
+                         
