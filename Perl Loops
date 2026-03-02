@@ -1,0 +1,33 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use feature 'say';
+#Loops = 5 types of loops we use in perl => for, while, do-while, foreach, unless
+#For Loop
+for (my $i=1; $i<=5; $i++){
+    say "pinky";
+}
+#while = it runs until the condition is true
+my $count = 1;
+while ($count<=5){
+    say "count=$count";
+    $count++;
+}
+#Do-While = runs the condition parallely (after printing the statement it checks for the condition)
+my $count = 5;
+do{
+    say "count=$count";
+    $count++;
+}while($count<=10);
+
+#foreach =it stores the data and give output without using index values in order
+my @var=("vlsi","design","flow");
+foreach my $vars(@var){    #it takes the array index values automatically vlsi-index[0], design-index[1], flow-indexvalue[2]
+    say "$vars";
+}
+#unless = its not a repition loop , it is a dediction loop i.e., which runs only once
+my $count=1;
+unless($count>5);{
+    say "count = $count";
+    $count++;
+}
