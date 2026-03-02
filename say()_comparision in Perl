@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use feature 'say';
+say "enter your first string:";
+my $b=<STDIN>;   #standard input - STDIN
+chomp($b);
+say "enter your second string:";
+my $s=<STDIN>;   #standard input - STDIN
+chomp($s);
+say ("Equal to:" .($b eq $s));
+say ("NotEqual to:" .($b ne $s));
+say ("Greater_than:" .($b gt $s));
+say ("Less_than:" .($b lt $s));
+say ("Greaterthan or Equalto:" .($b ge $s));
+say ("Lessthan or Equalto:" .($b le $s));
+#my $Equal_to = ($string1 eq $string2);
+#say "the Equal_to is: $Equal_to";
+say "the multiplelines(print stop to finish)"
+
+
+
+
+
+
+
+
+#my $b = "bhavi";
+#my $s = "sravs";
