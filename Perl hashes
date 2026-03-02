@@ -1,0 +1,13 @@
+# Perl Program to demonstrate the
+# Hashes data type
+
+# Hashes
+#!/usr/bin/perl
+use strict;
+use warnings;
+my %data = ('GFG', 7, 'for', 4, 'Geeks', 11);
+
+#displaying result
+print "\$data{'GFG'} = $data{'GFG'}\n";
+print "\$data{'for'} = $data{'for'}\n";
+print "\$data{'Geeks'} = $data{'Geeks'}\n";
