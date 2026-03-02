@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use feature 'say';
+#Ternary operation
+#my $attendance=75;
+say "enter your attendance:";
+my $attendance=<STDIN>;   #standard input - STDIN
+chomp($attendance);
+my $condition = ($attendance >= 60) ? "Eligible" : "Not_Eligible";
+say ($condition);
