@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+my $b = "student1";
+my $s = "student2";
+print ("Equal to:" .($b==$s)."\n");
+print ("NotEqual to:" .($b!=$s)."\n");
+print ("Greater_than:" .($b>$s)."\n");
+print ("Less_than:" .($b<$s)."\n");
+print ("Greaterthan or Equalto:" .($b>=$s)."\n");
+print ("Lessthan or Equalto:" .($b<=$s)."\n");
+
+#values
+my $x = 10;
+my $y = 20;
+print ("Equal to1:" .($x==$y)."\n");
+print ("NotEqual to1:" .($x!=$y)."\n");
+print ("Greater_than1:" .($x>$y)."\n");
+print ("Less_than1:" .($x<$y)."\n");
+print ("Greaterthan or Equalto1:" .($x>=$y)."\n");
+print ("Lessthan or Equalto1:" .($x<=$y)."\n");
