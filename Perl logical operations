@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+#logical operators
+my $m=10;
+my $n=20;
+if($m && $n){
+    print "conditon true\n";
+}else{
+    print"condition flase\n";
+}
+
+#concatination
+
+my $name="student";
+my $domain ="vlsi";
+
+print $name .",".$domain."\n";
+
+#replication
+my $bhavya= "udatha";
+print "$bhavya\n" x(3)."\n";
+
