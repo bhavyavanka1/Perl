@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+my $a = 61;
+my $b = 53;
+
+print "Addition:" .($a+$b)."\n";
+print "Subtraction:" .($a-$b)."\n";
+print "Multiplication:" .($a*$b)."\n";
+print "Division:" .($a/$b)."\n";
+print "Modular division:" .($a%$b)."\n";
