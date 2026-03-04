@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+use strict; # it checks every syntax and data
+use warnings; #it gives warnings
+#open file
+open (my $fh, "<","read1.txt") or die "file cannot open"; #$fh =[file handling]
+while (my $line=<$fh>) { #it will read line by line
+    print $line;
+}
+close($fh);
+
+# "<" it represents to perform read operation in file handling
+# create read file.txt and any content or stmts which will read by the read.pl file
