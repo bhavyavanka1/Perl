@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+use strict; # it checks every syntax and data
+use warnings; #it gives warnings
+#open file
+open (my $fh, ">>","write1.txt") or die "file cannot open"; #$fh =[file handling]
+print $fh "yesterday is a holiday\n";
+print $fh "I didn't enjoyed\n";
+close($fh);
+print "data is appended successfully"
