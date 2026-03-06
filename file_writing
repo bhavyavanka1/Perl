@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+use strict; # it checks every syntax and data
+use warnings; #it gives warnings
+#open file
+open (my $fh, ">","write1.txt") or die "file cannot open"; #$fh =[file handling]
+print $fh "student1\n";
+print $fh "student2\n";
+print $fh "college friends\n";
+close($fh);
+print "data is written successfully";
+
+# ">" it represents to perform write operation in file handling
+# automatically the write1.txt file is created(without creating it) after running the program
+# open (my $fh, ">","write1.txt") or die "file cannot open"; to perform above line this is the syntax
