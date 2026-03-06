@@ -1,0 +1,43 @@
+#!/usr/bin/perl
+use strict; # it checks every syntax and data
+use warnings; # it gives warnings
+
+#open file
+open (my $fh,"<","data.pl");
+my $ERROR = 0;
+my $WARNING = 0;
+my $INFO = 0;
+#while-read line by line
+while(<$fh>){
+    if(/ERROR/){
+        $ERROR++;
+    }
+    if(/WARNING/){
+        $WARNING++;
+    }
+    if(/WARNING/){
+        $INFO++;
+    }
+}
+print "total errors = $ERROR\n";
+print "total warnings = $WARNING\n";
+print "total INFO = $INFO\n";
+close($fh);
+
+#define status
+my $status;
+if($ERROR>0){
+    $status = "fail";
+}
+else{
+    $status = "pass";
+}
+print("$status\n");
+
+#Summary 
+open(my $out, ">","report.txt") or die "file cannot open";
+print $out ("summary report\n");
+print $out ("total errors = $ERROR\n");
+print $out("total warnings = $WARNING\n");
+print $out("total INFO = $INFO\n");
+close($out);
