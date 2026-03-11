@@ -1,0 +1,27 @@
+# Perl Script for Log File Error Detection
+# Overview
+# This project demonstrates a simple Perl script used for log file analysis. 
+# The script reads a text file line by line and searches for specific patterns using Perl Regular Expressions (Regex).
+# If a matching pattern is found, the script prints the matched line.
+# This type of scripting is commonly used in industry environments for analyzing system logs, debugging reports, and extracting error messages from large log files.
+
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+open (my $fh, "<","textfile.txt") or die "file cannot open";
+
+while(my $line = <$fh>) {
+    if($line =~ /E.ROR/) {
+        print "matches: $line\n";
+    }
+}
+
+close($fh);
+
+
+#textfile.txt 
+#content
+ERROR
+E.ROR
+E+ROR
