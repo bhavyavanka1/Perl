@@ -89,6 +89,18 @@ Report generation
 -Web development (CGI)
 -Network and security scripting
 -Test automation
-Generating summary reports
+-Generating summary reports
+-Counting warnings and errors in logs
 
-Counting warnings and errors in logs
+# Regex Pattern
+
+| Part    | Meaning                |
+| ------- | ---------------------- |
+| `slack` | literal word           |
+| `\s*`   | zero or more spaces    |
+| `=`     | equal symbol           |
+| `-?`    | optional negative sign |
+| `\d+`   | digits                 |
+| `\.`    | decimal point          |
+| `\d+`   | digits after decimal   |
+| `( )`   | capture group          |
