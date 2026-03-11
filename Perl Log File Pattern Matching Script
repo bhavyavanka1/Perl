@@ -1,0 +1,19 @@
+#!/usr/bin/perl          # Interpreter path for Perl
+use strict;              # Enforces variable declaration and good coding practice
+use warnings;            # Displays warning messages
+
+open (my $fh, "<","textfile2.txt") or die "file cannot open";
+
+while(my $line = <$fh>) {
+    if($line =~ /ER/) {
+        print "matches: $line\n";
+    }
+}
+
+close($fh);
+
+# textfile2.txt content
+INFO system started
+ERROR memory failed
+SERVER connection lost
+WARNING low battery
