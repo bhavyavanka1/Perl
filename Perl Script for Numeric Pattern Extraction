@@ -1,0 +1,15 @@
+#!/usr/bin/perl          #interpretation by linux
+use strict; # it checks every syntax and data
+use warnings; #it gives warnings
+
+open (my $fh, "<","data4.txt") or die "file cannot open";
+while(my $line =<$fh>){
+    if($line =~ /(\d+)/){
+        print "number: $1\n";
+    }
+}
+close($fh);
+
+
+#data4.txt content
+cells = 143.89
