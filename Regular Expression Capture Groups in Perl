@@ -1,0 +1,16 @@
+#!/usr/bin/perl          # interpretation by linux
+use strict;              # checks syntax and variables
+use warnings;            # gives warnings
+
+open (my $fh, "<","data4.txt") or die "file cannot open";
+
+while(my $line = <$fh>) {
+    if($line =~ /slack\s*=\s*(-?(\d+\.\d+))/){
+        print "slack = $1\n";
+    }
+}
+
+close($fh);
+
+# data4.txt content
+slack = -0.45
